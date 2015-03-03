@@ -2,15 +2,27 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
 </head>
 
+<!-- trying some new stuff with the vector thing -->
+<template name="geometries">
+  <div class="geometryWrapper">
+      <a href="{{pathFor 'page1'}}" class="">
+        <p class="float-hover someLink">Continue....</p>
+      </a>
 
-<template name="layout">
-  {{>yeild}}
+    <canvas id="geometries"></canvas>
+
+  </div>
 </template>
 
 <template name="main">
   <div class="header">
-  TEST TEST
-    <div class="square"></div>
+    <div class="{{#if isCurrentRoute 'page1'}}activePage{{/if}} inlineLetter">  T</div>
+    <div class="{{#if isCurrentRoute 'page2'}}activePage{{/if}} inlineLetter">  E</div>
+    <div class="{{#if isCurrentRoute 'page3'}}activePage{{/if}} inlineLetter">  S</div>
+    <div class="{{#if isCurrentRoute 'page4'}}activePage{{/if}} inlineLetter">  T</div>
+
+
+    <div class="square">l</div>
   </div>
   <div class="wrapper">
     {{>swipe Swiper=Swiper}}
@@ -19,12 +31,20 @@
 
 
 <template name="page1">
-  page 1
 
   <div class="next swipe-control">next</div>
-  <div class="middle no-swipe">You cant begin a swipe here!</div>
 
-  <div class="pop-up">pop up</div>
+
+  <div class="videoWrapper">
+    <iframe src="//player.vimeo.com/video/60767036?byline=0&portrait=0" class="iframeTest" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+  </div>
+  <div class="videoText">
+    <p>
+Learn about a new "superpower" that isn't being taught in in 90% of US schools.<br /><br />
+      Starring Bill Gates, Mark Zuckerberg, will.i.am, Chris Bosh, Jack Dorsey, Tony Hsieh, Drew Houston, Gabe Newell, Ruchi Sanghvi, Elena Silenok, Vanessa Hurst, and Hadi Partovi. Directed by Lesley Chilcott.
+    </p>
+  </div>
+  
   
 </template>
 
@@ -36,35 +56,21 @@
 
 <template name="page3">
   <div class="scroll-me scrollable">
-    <input type="text" placeholder="text input">
-    <input type="checkbox">
-    <input type="checkbox">
-    <input type="checkbox">
-    <input type="radio" name="radio">
-    <input type="radio" name="radio">
-    <input type="radio" name="radio">
-    <input type="radio" name="radio">
-    <textarea placeholder="text area!"></textarea>
-
+<!--
     <div class="swipe-control right-to-page1">skip to page1 -></div>
 
     <div class="no-swipe">You cant begin a swipe here!</div>
-
+-->
     <div class="large-scrollable">
 
-      <div>large-scrollable</div>
+        <img class="codeDotOrg" src="codeDotOrg-infographic.png">
 
-      <div>large-scrollable</div>
-
-      <div>large-scrollable</div>
-
-  
     </div>
   </div>
 </template>
 
 <template name="page4">
-  page 4
+  BLAHBH
 </template>
 
 <template name="page5">

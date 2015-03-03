@@ -1,6 +1,6 @@
 // Initialize the Swiper
 
-this.Swiper = new Swipe(['page1', 'page2', 'page3', 'page4', 'page5']);
+this.Swiper = new Swipe(['geometries', 'page1', 'page2', 'page3', 'page4', 'page5']);
 
 Template.main.helpers({
   Swiper: function() {
@@ -10,6 +10,7 @@ Template.main.helpers({
 
 // If an element controls swiping, make sure to include the `swipe-control` class.
 // Then to use the control, use `swipeControl`.
+
 
 Swiper.click('page1', '.next', function(e, t) {
   return Swiper.moveRight();

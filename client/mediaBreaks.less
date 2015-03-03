@@ -4,9 +4,14 @@
 
 
 .square {
-    height: 100px;
-    width: 100px;
+    height: 20px;
+    width: 20px;
     float: right;
+    //margin-top:
+}
+
+.iframeTest {
+
 }
 
 /*==========  Mobile First Method  ==========*/
@@ -16,15 +21,24 @@
     .square {
         background-color: red;
     }
-    
-}
-
-/* Extra Small Devices, Phones */ 
-@media only screen and (min-width : 480px) {
-    .square {
-        background-color: green;
+    .videoWrapper {
+    //    display:block;
+        width: 100%;
+        padding: 10px;
+        margin: 10px;
     }
-    
+    .videoText {
+    //    display:block;
+        width: 100%;
+        padding: 10px;
+        margin: 10px;
+    }
+    .iframeTest {
+    float: none;
+    }
+    .codeDotOrg{
+        width: 90%;
+    }
 }
 
 /* Small Devices, Tablets */
@@ -32,7 +46,13 @@
     .square {
         background-color: blue;
     }
-    
+    .iframeTest {
+        float: none;
+    }
+    .codeDotOrg{
+        width: 75%;
+    }
+
 }
 
 /* Medium Devices, Desktops */
@@ -40,8 +60,36 @@
     .square {
         background-color: pink;
     }
+    .videoWrapper {
+        float:left;
+        display: inline-block;
+        width: 40%;
+        padding: 10px;
+        margin: 10px;
+    }
+    .videoText {
+        display: inline-block;
+        width: 35%;
+        padding: 10px;
+        margin: 10px;
+    }
+    .iframeTest {
+        float: right;
+}
+    .codeDotOrg{
+        width: 65%;
+    }
+}
+
+/* Extra Small Devices, Phones */ 
+/*
+@media only screen and (min-width : 480px) {
+    .square {
+        background-color: green;
+    }
     
 }
+*/
 
 /* Large Devices, Wide Screens */
 /*@media only screen and (min-width : 1200px) {

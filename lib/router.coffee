@@ -1,6 +1,11 @@
+Router.route '/',
+  template: 'geometries'
+  path: '/'
+
 Router.route 'page1',
   template: 'main'
-  path: '/'
+  path: '/page1'
+  name: 'page1'
 
 Router.route 'page2',
   template: 'main'

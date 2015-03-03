@@ -1,3 +1,5 @@
+/*
+
 html, body {
   position: absolute;
   width: 100%;
@@ -6,7 +8,58 @@ html, body {
   margin: 0;
   overflow: hidden;
 }
+*/
 
+.inlineLetter {
+  display: inline-block;
+}
+
+@font-face{ 
+  font-family: 'NexaRust';
+  src: url('/fonts/NexaRustSlab-BlackShadow01-Free.otf');
+  //font-weight: normal;
+  // font-style: normal;
+}
+
+@font-face{ 
+  font-family: 'NexaRustExtras';
+  src: url('/fonts/NexaRustExtras-Free.otf');
+  //font-weight: normal;
+  // font-style: normal;
+}
+
+
+
+
+.geometryWrapper {
+  position: absolute;
+  background-color: whitesmoke;
+}
+
+.someLink {
+  color: rgba(188, 25, 81, .5);
+  text-align: right;
+  text-decoration: none;
+  bottom: 0;
+  position: absolute;
+  //float: right;
+  // margin-top: 150px;
+//  margin-left: auto;
+//  margin-right: auto;
+   background-image:
+    linear-gradient(
+      to right, 
+      HSLA(279, 80%, 92%, .1), 
+      HSLA(279, 80%, 92%, .3), 
+      HSLA(279, 80%, 92%, .6), 
+      HSLA(279, 80%, 92%, 1)
+    );
+ // background-color: HSLA(279, 80%, 92%, .5);
+  width: 100%;
+  //-webkit-font-smoothing: antialiased;
+  font-family: 'NexaRust', Arial, sans-serif;
+  font-size: 12vmin;
+}
 .header {
   position: relative;
   width: 100%;
@@ -16,6 +69,22 @@ html, body {
   text-align: center;
   font-size: 50px;
   background: HSLA(51, 29%, 82%, 1);
+  font-family: 'NexaRust', Arial, sans-serif;
+  .square {
+    font-size:35px;
+    font-family: 'NexaRustExtras', Arial, sans-serif;
+    padding-right:15px;
+  }
+}
+
+.inlineLetter {
+//  color: pink;
+  a {
+    text-decoration: none;
+  }
+}
+.activePage {
+  color:brown;
 
 }
 
@@ -33,6 +102,11 @@ html, body {
   overflow: hidden;
 }
 
+.codeDotOrg {
+  margin-left: auto;
+  margin-right: auto;
+  background-color: transparent;
+}
 
 .scroll-me {
   height: 100%;
@@ -40,6 +114,7 @@ html, body {
 }
 
 .large-scrollable {
+  margin-top: 15px;
   width: 100%: ;
 }
 
@@ -68,16 +143,16 @@ html, body {
 }
 
 .page1 {
-  background-color: #5b0e9b;
+  background-color: HSLA(279, 80%, 92%, 1);
 }
 .page2 {
   background-color: #0e629b;
 }
 .page3 {
-  background-color: #0e9b7b;
+  background-color: HSLA(200, 4%, 87%, 1);
 }
 .page4 {
-  background-color: #609b0e;
+ // background-color: #609b0e;
 }
 .page5 {
   background-color: #979b0e;
@@ -99,8 +174,6 @@ html, body {
     background: #609b0e;
   }
 }
-
-
 
 
 .pop-up {
